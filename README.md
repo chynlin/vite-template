@@ -21,5 +21,5 @@
 2. 打开终端并运行以下命令，创建一个新仓库（替换 `NEW_REPO_NAME` 和 `OWNER/TEMPLATE_REPO_NAME`）：
 
    ```sh
-   gh repo create NEW_REPO_NAME --template OWNER/TEMPLATE_REPO_NAME
+   gh repo create NEW_REPO_NAME --template chynlin/vite-template
    ```
