@@ -29,20 +29,18 @@ export default defineConfig(({ command, mode }) => {
       proxy: {
         "/api": {
           //请求称号
-          // target: 'http://10.1.1.232:8000/api'
-          target: "https://pi-ex-spot.pandora-demo.xyz/api", //请求的接口
+          target: "https://example/api", //请求的接口
           changeOrigin: true, //容许跨域
           rewrite: (path) => path.replace(/^\/api/, ""),
         },
         "/static/upload": {
           //请求称号
-          // target: 'http://10.1.1.232:8000/static/upload'
-          target: "https://pi-ex-spot.pandora-demo.xyz/", //请求的接口
+          target: "https://example/", //请求的接口
           changeOrigin: true, //容许跨域
         },
         "/socket": {
           //请求称号
-          target: "https://pi-ex-spot.pandora-demo.xyz", //请求的接口
+          target: "https://example", //请求的接口
           changeOrigin: true, //容许跨域
           ws: true, // 开启websocket代理
         },
